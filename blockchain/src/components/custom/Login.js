@@ -26,7 +26,7 @@ class Login extends Component {
             password: password,
         })
         .then(function(response){ 
-            if(response.data){
+            if(!response.data){
                 window.location.assign("/newelection")
             }else{
                 alert('Incorrect Username or Password');
